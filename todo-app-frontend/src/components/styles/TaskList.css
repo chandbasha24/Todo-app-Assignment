@@ -1,0 +1,148 @@
+/* Task List Styles */
+.task-list {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.task-list h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-list li h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.task-list li p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.task-list .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.task-list button {
+  padding: 6px 12px; /* Smaller button size */
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.task-list .edit-btn {
+  background-color: #28a745; /* Green for Edit */
+  color: white;
+}
+
+.task-list .edit-btn:hover {
+  background-color: #218838;
+}
+
+.task-list .delete-btn {
+  background-color: #dc3545; /* Red for Delete */
+  color: white;
+}
+
+.task-list .delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Edit Task Form Styles */
+.edit-task-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-task-form h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.edit-task-form input[type="text"],
+.edit-task-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.edit-task-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.edit-task-form button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-task-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.edit-task-form button[type="button"] {
+  background-color: #fff;
+  color: #28a745;
+  padding: 10px 20px;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-task-form button[type="button"]:hover {
+  background-color: #f7f7f7;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .task-list {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .task-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .edit-task-form {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .edit-task-form input[type="text"],
+  .edit-task-form textarea {
+    font-size: 14px;
+  }
+
+  .task-list button {
+    padding: 5px 10px; /* Smaller buttons for mobile */
+  }
+
+  .task-list .button-container {
+    flex-direction: column; /* Stack buttons on smaller screens */
+  }
+}
